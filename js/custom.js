@@ -87,7 +87,6 @@ if (matchMedia('(min-width: 768px) and (max-width: 991px)').matches) {
 }
 
 
-
 /* =================================
 ===  DOWNLOAD BUTTON CLICK SCROLL ==
 =================================== */
@@ -178,6 +177,7 @@ $(document).ready(function () {
 
 });
 
+
 /* =================================
 ===  SUBSCRIPTION FORM          ====
 =================================== */
@@ -208,7 +208,6 @@ $("#subscribe").submit(function (e) {
 
     return false;
 });
-
 
 
 

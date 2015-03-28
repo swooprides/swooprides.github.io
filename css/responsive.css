@@ -5,7 +5,7 @@ RESPONSIVE FIXES
 -----------------------------------------*/
  
 
- @media (max-width: 1024px) {
+@media (max-width: 1024px) {
 
     .animated {
         -webkit-transform: translateZ(0);
@@ -123,7 +123,6 @@ RESPONSIVE FIXES
         padding-top: 9%;
         text-align: center;
     }
-
 
     .features .features-left,
     .features .features-right {
