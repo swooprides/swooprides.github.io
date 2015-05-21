@@ -700,10 +700,12 @@ object {
 -----------------------------------------*/
 
 .download {
-  background: url('../images/bg-3.jpg') no-repeat center fixed;
-  -webkit-background-size: cover;
-  background-size: cover;
-  color: #ffffff;
+  background: #fff;
+}
+
+.download > div {
+  padding-top: 110px;
+  padding-bottom: 70px;
 }
 
 .download .color-overlay {
@@ -726,7 +728,7 @@ object {
   -webkit-box-shadow: none;
   box-shadow: none;
   background: #FFF;
-  border: 2px solid #FFF;
+  border: 2px solid #bbb;
 }
 
 .download .subscription-form .input-box:focus,
@@ -845,7 +847,6 @@ footer .copyright {
 .phone-image {
   position: relative;
 }
-
 .phone-image_tpn:before {
   content: "";
   display: block;
@@ -858,6 +859,10 @@ footer .copyright {
   background-size: cover;
 }
 
+.phone-image_itf {
+
+}
+
 .phone-image_sc:before {
   content: "";
   display: block;
@@ -868,6 +873,10 @@ footer .copyright {
   left: 21px;
   background: url('../images/phone-view-sc.png') no-repeat;
   background-size: cover;
+}
+
+.phone-image_se {
+
 }
 
 .phone-image_ta:before {
@@ -892,19 +901,6 @@ footer .copyright {
   left: 21px;
   background: url('../images/phone-view-rewards.png') no-repeat;
   background-size: cover;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .phone-image_tpn:before,
-  .phone-image_sc:before,
-  .phone-image_ta:before,
-  .phone-image_rewards:before {
-    width: 184px;
-    height: 326px;
-    position: absolute;
-    top: 68px;
-    left: 19px;
-  }
 }
 
 /*=========== PRIVACY POLICY PAGE ==========*/
