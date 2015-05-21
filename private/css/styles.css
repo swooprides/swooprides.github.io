@@ -410,6 +410,7 @@ header .intro-section .buttons {
 .features .features-left .icon-container {
   float: right;
   margin-left: 20px;
+  min-height: 150px;
 }
 
 .features .features-right {
@@ -421,6 +422,7 @@ header .intro-section .buttons {
 .features .features-right .icon-container {
   float: left;
   margin-right: 20px;
+  min-height: 150px;
 }
 
 .features .feature {
@@ -429,7 +431,7 @@ header .intro-section .buttons {
 
 .features .feature .icon-container {
   display: block;
-  min-height: 120px;
+  min-height: 150px;
   margin-top: 5px;
 }
 
