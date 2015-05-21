@@ -285,6 +285,14 @@ header {
   background-position: 50% 0 !important;
 }
 
+header .privacy-policy {
+  /* background: url(../images/bg-1.jpg) no-repeat center top fixed; */
+  /*background: url(../images/background_city_image_original_750.jpg) no-repeat center top fixed;*/
+  /*-webkit-background-size: cover;*/
+  /*background-size: cover;*/
+  /*background-position: 50% 0 !important;*/
+}
+
 header .color-overlay {
   min-height: 900px;
 }
@@ -909,7 +917,7 @@ footer .copyright {
 
 /*=========== PRIVACY POLICY PAGE ==========*/
 .privacy-policy {
-  padding-top: 80px;
+  /*padding-top: 80px;*/
   padding-bottom: 30px;
   background: #ffffff;
 }
