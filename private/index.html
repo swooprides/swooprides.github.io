@@ -1,0 +1,1035 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="A ridesharing app that enables larges scale social carpooling">
+<meta name="keywords" content="ridesharing, carpool, social, drive, events">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- SITE TITLE -->
+<title>Swoop Rides</title>
+
+<!-- =========================
+      FAV AND TOUCH ICONS  
+============================== -->
+<link rel="icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+<!-- =========================
+     STYLESHEETS   
+============================== -->
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- FONT ICONS -->
+<!-- http://www.elegantthemes.com/blog/resources/elegant-icon-font -->
+<link rel="stylesheet" href="assets/elegant-icons/style.css">
+<link rel="stylesheet" href="assets/app-icons/styles.css">
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
+
+<!-- WEB FONTS -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
+
+<!-- CAROUSEL AND LIGHTBOX -->
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+
+<!-- ANIMATIONS -->
+<link rel="stylesheet" href="css/animate.min.css">
+
+<!-- CUSTOM STYLESHEETS -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- COLORS -->
+<link rel="stylesheet" href="css/colors/blue.css"> <!-- DEFAULT COLOR/ CURRENTLY USING -->
+<!-- <link rel="stylesheet" href="css/colors/red.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/green.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/purple.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/orange.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/blue-munsell.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/slate.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/yellow.css"> -->
+
+<!-- RESPONSIVE FIXES -->
+<link rel="stylesheet" href="css/responsive.css">
+
+
+<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<!-- JQUERY -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+<!-- =========================
+     PRE LOADER       
+============================== -->
+<!--<div class="preloader">-->
+  <!--<div class="status">&nbsp;</div>-->
+<!--</div>-->
+
+<!-- =========================
+     HEADER   
+============================== -->
+<header class="header" data-stellar-background-ratio="0.5" id="home">
+
+<!-- COLOR OVER IMAGE -->
+<div class="color-overlay"> <!-- To make header full screen. Use .full-screen class with color overlay. Example: <div class="color-overlay full-screen">  -->
+
+	<!-- STICKY NAVIGATION -->
+	<div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation">
+		<div class="container">
+			<div class="navbar-header">
+				
+				<!-- LOGO ON STICKY NAV BAR -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#kane-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+
+				<!--<a class="navbar-brand" href="#"><img src="images/logo-black.png" alt=""></a>-->
+        <a class="navbar-brand" href="#"><img src="images/logo-blue.svg" class="swoop-logo-brand" onerror="this.src='images/logo-blue-header.png'" alt="Swoop Rides"></a>
+				
+			</div>
+			
+			<!-- NAVIGATION LINKS -->
+			<div class="navbar-collapse collapse" id="kane-navigation">
+				<ul class="nav navbar-nav navbar-right main-navigation">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#ridesharing">Ridesharing</a></li>
+					<li><a href="#how-it-works">How it Works</a></li>
+					<li><a href="#join-beta">Join Beta</a></li>
+				</ul>
+			</div>
+		</div> <!-- /END CONTAINER -->
+	</div> <!-- /END STICKY NAVIGATION -->
+	
+	
+	<!-- CONTAINER -->
+	<div class="container">
+		
+		<!-- ONLY LOGO ON HEADER -->
+		<div class="only-logo">
+			<div class="navbar">
+				<div class="navbar-header">
+					<!--<img src="images/logo.png" alt="">-->
+          <img src="images/logo.svg" class="header-logo" onerror="this.src='images/logo.png'" alt="Swoop Rides">
+				</div>
+			</div>
+		</div> <!-- /END ONLY LOGO ON HEADER -->
+		
+		<div class="row home-contents">
+			<div class="col-md-6 col-sm-6">
+				
+				<!-- HEADING AND BUTTONS -->
+				<div class="intro-section">
+					
+					<!-- WELCOM MESSAGE -->
+					<h1 class="intro">Social ridesharing enabled.</h1>
+					<h5>Let's take a ride!</h5>
+					
+					<!-- BUTTON -->
+					<div class="buttons" id="download-button">
+						
+						<a href="#join-beta" class="btn btn-default btn-lg standard-button"><i class="icon-app-download"></i>Join Beta</a>
+						
+					</div>
+					<!-- /END BUTTONS -->
+					
+				</div>
+				<!-- /END HEADNING AND BUTTONS -->
+				
+			</div>
+			
+			
+			<div class="col-md-6 col-sm-6 hidden-xs">
+			    
+			    <!-- PHONE IMAGE WILL BE HIDDEN IN TABLET PORTRAIT AND MOBILE-->
+			    <div class="phone-image">
+			    <img src="images/2-iphone-right.png" class="img-responsive" alt="">
+			    </div>
+			    
+			</div>
+			
+		</div>
+		<!-- /END ROW -->
+		
+	</div>
+	<!-- /END CONTAINER -->
+
+	<!-- START CHEVRON ARROW -->
+	<div class="swoop-chevron-icon-container">
+		<a href="#features"><i class="glyphicon glyphicon-chevron-down"></i></a>
+	</div>
+	<!-- END CHEVRON ARROW -->
+</div>
+<!-- /END COLOR OVERLAY -->
+</header>
+<!-- /END HEADER -->
+
+<!-- =========================
+     FEATURES 
+============================== -->
+<section class="features" id="features">
+
+<div class="container">
+	
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+		
+		<!-- SECTION TITLE -->
+		<h2 class="dark-text">Swoop Features</h2>
+		<div class="colored-line">
+		</div>
+		<div class="section-description">
+			Swoop makes social ride sharing easy.
+		</div>
+		<div class="colored-line">
+		</div>
+	</div>
+	<!-- /END SECTION HEADER -->
+	
+	
+	<div class="row">
+		
+		<!-- FEATURES LEFT -->
+		<div class="col-md-4 col-sm-4 features-left wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- FEATURE -->
+			<div class="feature" data-feature="tpn">
+				
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_flowchart"></i>
+					</div>
+				</div>
+				
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Trusted Peer Network</h4>
+					<p>
+						Discover and share rides with your trusted network of personal, professional,
+						and social contacts who travel the same destinations and routes.
+					</p>
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEATURE -->
+			
+			<!-- FEATURE -->
+			<div class="feature" data-feature="itf">
+				
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_compass"></i>
+					</div>
+				</div>
+				
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Intelligent Trip Feed</h4>
+					<p>
+						Browse and join all journeys your network is taking
+						that pass through your location and are relevant to your lifestyle.
+					</p>
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEATURE -->
+			
+			<!-- FEATURE -->
+			<div class="feature" data-feature="sc">
+				
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_calendar"></i>
+					</div>
+				</div>
+				
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Social Calendar</h4>
+					<p>
+						Swoop identifies who in your network will attend the same events,
+						and suggests ways to <em>Swoop</em> there together.
+					</p>
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEATURE -->
+			
+		</div>
+		<!-- /END FEATURES LEFT -->
+		
+		<!-- PHONE IMAGE -->
+		<div class="col-md-4 col-sm-4">
+			<div class="phone-image wow bounceIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+				<img src="images/single-iphone.png" alt="">
+			</div>
+		</div>
+		
+		<!-- FEATURES RIGHT -->
+		<div class="col-md-4 col-sm-4 features-right wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- FEATURE -->
+			<div class="feature" data-feature="se">
+				
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="social_share"></i>
+					</div>
+				</div>
+				
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Sponsored Events</h4>
+					<p>
+						Explore more opportunities to travel with your network by sharing
+						trips to suggested events that are well suited for ride sharing.
+					</p>
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEATURE -->
+
+			<!-- FEATURE -->
+			<div class="feature" data-feature="ta">
+				
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_link_alt"></i>
+					</div>
+				</div>
+				
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Trip Automation</h4>
+					<p>
+						Miles, costs, and your willingness to drive are logged automatically and used to
+						pair you with the most number of social rides.
+					</p>
+				</div>
+				
+			</div>
+			
+			<!-- /END SINGLE FEATURE -->
+
+			<!-- FEATURE -->
+			<div class="feature" data-feature="rewards">
+
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_gift_alt"></i>
+					</div>
+				</div>
+
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Rewards</h4>
+					<p>
+						Swoop recognizes you and your network by turning miles into
+						on-the-go rewards, event deals, and community points..
+					</p>
+				</div>
+
+			</div>
+			<!-- /END SINGLE FEATURE -->
+			
+		</div>
+		<!-- /END FEATURES RIGHT -->
+		
+	</div>
+	<!-- /END ROW -->
+	
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END FEATURES SECTION -->
+
+
+<!-- =========================
+     BRIEF LEFT SECTION 
+============================== -->
+<!--<section class="app-brief grey-bg" id="brief1">-->
+
+<!--<div class="container">-->
+	<!---->
+	<!--<div class="row">-->
+		<!---->
+		<!--&lt;!&ndash; PHONES IMAGE &ndash;&gt;-->
+		<!--<div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">-->
+			<!--<div class="phone-image">-->
+				<!--<img src="images/2-iphone-left.png" alt="">-->
+			<!--</div>-->
+		<!--</div>-->
+		<!---->
+		<!--&lt;!&ndash; RIGHT SIDE WITH BRIEF &ndash;&gt;-->
+		<!--<div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">-->
+			<!---->
+			<!--&lt;!&ndash; SECTION TITLE &ndash;&gt;-->
+			<!--<h2 class="dark-text">Explain why it's best</h2>-->
+			<!---->
+			<!--<div class="colored-line-left">-->
+			<!--</div>-->
+			<!---->
+			<!--<p>-->
+				<!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.-->
+			<!--</p>-->
+			<!---->
+			<!--&lt;!&ndash; FEATURE LIST &ndash;&gt;-->
+			<!--<ul class="feature-list">-->
+				<!--<li><i class="icon_lock_alt"></i> Reliable and Secure Platform</li>-->
+				<!--<li><i class="icon_check_alt2"></i> Everything is perfectly orgainized for future</li>-->
+				<!--<li><i class="icon_paperclip"></i> Attach large file easily</li>-->
+				<!--<li><i class="icon_adjust-vert"></i> Tons of features and easy to use and customize</li>-->
+			<!--</ul>-->
+			<!---->
+		<!--</div>-->
+		<!--&lt;!&ndash; /END RIGHT BRIEF &ndash;&gt;-->
+		<!---->
+	<!--</div>-->
+	<!--&lt;!&ndash; /END ROW &ndash;&gt;-->
+	<!---->
+<!--</div>-->
+<!--&lt;!&ndash; /END CONTAINER &ndash;&gt;-->
+
+<!--</section>-->
+<!--&lt;!&ndash; /END SECTION &ndash;&gt;-->
+
+
+<!-- =========================
+     BRIEF RIGHT SECTION 
+============================== -->
+<section class="app-brief grey-bg" id="ridesharing">
+
+<div class="container">
+	
+	<div class="row">
+		
+		<!-- BRIEF -->
+		<div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- SECTION TITLE -->
+			<h2 class="dark-text">Real Ridesharing</h2>
+			
+			<div class="colored-line-left">
+			</div>
+
+			<p>Every day trusted people from your social and professional networks live, work, and play along similar routes and destinations and attend the same events, yet it’s a challenge to locate each other and travel there together. </p>
+			<p>Have you wondered who the other people are in the cars around you while sitting in morning traffic on the way to work? What if we tell you that 75% of commuters are within three degrees of separation, and many of them have interesting jobs, experiences, and stories to tell, just like you do. How cool would it be to be part of a social network on wheels where you get to share rides with and get to know the people who are in your shoes every single morning. Swoop turns your car into an opportunity to expand your professional network, make new friends, and share the cost of your commute. </p>
+			<p>Are you surprised to discover that many of the attendees of your favorite MeetUp, sports event, weekend soccer practice, or concert in town are friends of your friends, live nearby, or travelled alone to the event just like you did? Wouldn’t it be fun and rewarding to share the ride next time, make friends, and share stories on the way? Swoop allows you to form social carpools on the way to events with the click of a button, and meet fellow event goers with the same interests as yours. </p>
+			<p>How many times have you wanted to go to the beach on the weekend, go hiking, run an errand, or escape the city for a few hours, but you don’t have a car, or don’t have anyone in mind to go with? Swoop shows you where your network is going so you can always find a friend to go with or jump on a last minute spontaneous trip. What if you have someone in mind but don’t know where to go? No problem. Swoop shows you fun events suitable for sharing a ride to so you get to do new things together. </p>
+
+		</div>
+		<!-- /END BRIEF -->
+		
+		<!-- PHONES IMAGE -->
+		<div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+			<div class="phone-image">
+				<img src="images/2-iphone-right.png" alt="">
+			</div>
+		</div>
+		<!-- /END PHONES IMAGE -->
+		
+	</div>
+	<!-- /END ROW -->
+	
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END SECTION -->
+
+
+<!-- =========================
+     BRIEF LEFT SECTION WITH VIDEO 
+============================== -->
+<!--<section class="app-brief grey-bg" id="brief1">-->
+
+<!--<div class="container">-->
+	<!---->
+	<!--<div class="row">-->
+		<!---->
+		<!--&lt;!&ndash; PHONES IMAGE &ndash;&gt;-->
+		<!--<div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">-->
+			<!--<div class="video-container">-->
+				<!---->
+                <!--&lt;!&ndash;-->
+				<!--<div class="video">-->
+					<!---->
+					<!--<iframe src="//player.vimeo.com/video/88902745?byline=0&amp;portrait=0&amp;color=ffffff" width="600" height="338" frameborder="0" allowfullscreen>-->
+					<!--</iframe> -->
+				<!--</div>-->
+				<!--&ndash;&gt;-->
+				<!---->
+				<!--<div class="video">-->
+					<!---->
+					<!--<iframe width="640" height="360" src="//www.youtube.com/embed/VjbGg-VuqbU?rel=0" frameborder="0" allowfullscreen></iframe>-->
+				<!--</div>-->
+				<!---->
+			<!--</div>-->
+
+		<!--</div>-->
+		<!---->
+		<!--&lt;!&ndash; RIGHT SIDE WITH BRIEF &ndash;&gt;-->
+		<!--<div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">-->
+			<!---->
+			<!--&lt;!&ndash; SECTION TITLE &ndash;&gt;-->
+			<!--<h2 class="dark-text">Description with video</h2>-->
+			<!---->
+			<!--<div class="colored-line-left">-->
+			<!--</div>-->
+			<!---->
+			<!--<p>-->
+				<!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/><br/>-->
+				<!--Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.-->
+			<!--</p>-->
+			<!---->
+			<!---->
+		<!--</div>-->
+		<!--&lt;!&ndash; /END RIGHT BRIEF &ndash;&gt;-->
+		<!---->
+	<!--</div>-->
+	<!--&lt;!&ndash; /END ROW &ndash;&gt;-->
+	<!---->
+<!--</div>-->
+<!--&lt;!&ndash; /END CONTAINER &ndash;&gt;-->
+
+<!--</section>-->
+<!--&lt;!&ndash; /END SECTION &ndash;&gt;-->
+
+<!-- =========================
+     TESTIMONIALS 
+============================== -->
+<section class="testimonials">
+
+<div class="color-overlay">
+	
+	<div class="container wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<!-- FEEDBACKS -->
+		<div id="feedbacks" class="owl-carousel owl-theme">
+			
+			<!-- SINGLE FEEDBACK -->
+			<div class="feedback">
+
+				<!-- IMAGE
+				<div class="image">
+					<i class=" icon_quotations"></i>
+					<img src="images/clients-pic/3.jpg" alt="">
+				</div>-->
+				
+				<div class="message">
+					"Average daily commuting costs $20 a day. That’s $200,000 wasted over 20 years in a 2-person household. Or an above average family house in Chicago!"
+				</div>
+
+				<!--<div class="white-line">
+				</div>
+				
+				 INFORMATION
+				<div class="name">
+					John Doe
+				</div>
+				<div class="company-info">
+					CEO, AbZ Network
+				</div>-->
+				
+			</div>
+			<!-- /END SINGLE FEEDBACK -->
+			
+			<!-- SINGLE FEEDBACK -->
+			<div class="feedback">
+
+				<!-- IMAGE
+				<div class="image">
+					<i class=" icon_quotations"></i>
+					<img src="images/clients-pic/1.jpg" alt="">
+				</div>-->
+				
+				<div class="message">
+					"For every 8 work days, you waste 1 full work day in the car alone. That’s more than 1 year of productive time for every 5 years of commuting."
+				</div>
+
+				<!--<div class="white-line">
+				</div>
+
+				 INFORMATION
+				<div class="name">
+					John Doe
+				</div>
+				<div class="company-info">
+					CEO, AbZ Network
+				</div>-->
+				
+			</div>
+			<!-- /END SINGLE FEEDBACK -->
+			
+			<!-- SINGLE FEEDBACK -->
+			<div class="feedback">
+				
+				<!-- IMAGE
+				<div class="image">
+					<i class=" icon_quotations"></i>
+					<img src="images/clients-pic/2.jpg" alt="">
+				</div>-->
+				
+				<div class="message">
+					 "Carpooling to work for 10 years would result in enough free time to learn 4 new languages."
+				</div>
+
+				<!--<div class="white-line">
+				</div>
+
+				 INFORMATION
+				<div class="name">
+					John Doe
+				</div>
+				<div class="company-info">
+					CEO, AbZ Network
+				</div>-->
+				
+			</div>
+			<!-- /END SINGLE FEEDBACK -->
+
+			<!-- SINGLE FEEDBACK -->
+			<div class="feedback">
+
+				<!-- IMAGE
+				<div class="image">
+					<i class=" icon_quotations"></i>
+					<img src="images/clients-pic/2.jpg" alt="">
+				</div>-->
+
+				<div class="message">
+					"192 trees are needed to clean up the CO2 produced by your average daily work commute for 1 year. That’s almost 1 tree per day! If you share your rides to work for 1 year it’s the equivalent of planting 1 tree every other day!"
+				</div>
+
+				<!--<div class="white-line">
+				</div>
+
+				 INFORMATION
+				<div class="name">
+					John Doe
+				</div>
+				<div class="company-info">
+					CEO, AbZ Network
+				</div>-->
+
+			</div>
+			<!-- /END SINGLE FEEDBACK -->
+
+			<!-- SINGLE FEEDBACK -->
+			<div class="feedback">
+
+				<!-- IMAGE
+				<div class="image">
+					<i class=" icon_quotations"></i>
+					<img src="images/clients-pic/2.jpg" alt="">
+				</div>-->
+
+				<div class="message">
+					"75% of commuters to major corporate clusters are within 3 degrees of separation."
+				</div>
+
+				<!--<div class="white-line">
+				</div>
+
+				 INFORMATION
+				<div class="name">
+					John Doe
+				</div>
+				<div class="company-info">
+					CEO, AbZ Network
+				</div>-->
+
+			</div>
+			<!-- /END SINGLE FEEDBACK -->
+
+			<!-- SINGLE FEEDBACK -->
+			<div class="feedback">
+
+				<!-- IMAGE
+				<div class="image">
+					<i class=" icon_quotations"></i>
+					<img src="images/clients-pic/2.jpg" alt="">
+				</div>-->
+
+				<div class="message">
+					"If you meet only 1 new person every time you share a ride, your extended network expands by half a million people every year. After only 2 years, every single person in San Diego will be one introduction away."
+				</div>
+
+				<!--<div class="white-line">
+				</div>
+
+				 INFORMATION
+				<div class="name">
+					John Doe
+				</div>
+				<div class="company-info">
+					CEO, AbZ Network
+				</div>-->
+
+			</div>
+			<!-- /END SINGLE FEEDBACK -->
+			
+		</div>
+		<!-- /END FEEDBACKS -->
+		
+	</div>
+	<!-- /END CONTAINER -->
+	
+</div>
+<!-- /END COLOR OVERLAY -->
+
+</section>
+<!-- /END TESTIMONIALS SECTION -->
+
+
+<!-- =========================
+     SERVICES
+============================== -->
+<section class="services" id="how-it-works">
+
+<div class="container">
+	
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<!-- SECTION TITLE -->
+		<h2 class="dark-text">How it Works</h2>
+		
+		<div class="colored-line">
+		</div>
+		<div class="section-description">
+			Simple steps to social ridesharing
+		</div>
+		<div class="colored-line">
+		</div>
+		
+	</div>
+	<!-- /END SECTION HEADER -->
+	
+	<div class="row">
+
+		<!-- SINGLE SERVICE -->
+		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+			<!-- SERVICE ICON -->
+			<div class="service-icon">
+				<i class="ion-ios-location-outline"></i>
+			</div>
+
+			<!-- SERVICE HEADING -->
+			<h3>Go Places</h3>
+
+			<!-- SERVICE DESCRIPTION -->
+			<p>
+				Browse your Swoop trip feed and discover where your trusted network is going today, tomorrow, or this weekend. Whether it’s a trip to work, lunch with colleagues, social event, an errand, or a weekend escape, there are trips passing through your location all the time. You can search by address, destination, place of interest, or event name, and Swoop will find the best social carpool for you to join regardless whether you are a driver or a passenger.
+			</p>
+
+		</div>
+		<!-- /END SINGLE SERVICE -->
+
+
+		<!-- SINGLE SERVICE -->
+		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- SERVICE ICON -->
+			<div class="service-icon">
+				<i class="ion-ios-personadd-outline"></i>
+			</div>
+			
+			<!-- SERVICE HEADING -->
+			<h3>Grow your Network</h3>
+			
+			<!-- SERVICE DESCRIPTION -->
+			<p>
+				Discover who else is in your shoes, and travels the same routes and destinations that you do. Invite them to your Swoop network and share more trips together. The more Swoop connections you have, the more opportunities to ride your network and spend time with friends, neighbors, and colleagues. Pretty soon you won’t have to travel alone anymore, be it to work, school, or a weekend escape.
+			</p>
+			
+		</div>
+		<!-- /END SINGLE SERVICE -->
+
+
+		<!-- SINGLE SERVICE -->
+		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- SERVICE ICON -->
+			<div class="service-icon">
+				<i class="icon_gift_alt"></i>
+			</div>
+			
+			<!-- SERVICE HEADING -->
+			<h3>Get Rewards</h3>
+			
+			<!-- SERVICE DESCRIPTION -->
+			<p>
+				Track miles and CO2, share costs, and vie for a top spot on the Swoop leaderboard. Miles turn into rewards and recognition, so the more trips you share the higher your standing within the community. Log any trip you take with anyone automatically, whether it's planned or spontaneous, so even a grocery run, a shared ride to school, or a lunch trip with co-workers gets you miles and rewards. Travelling together is finally cool and it pays back.
+			</p>
+			
+		</div>
+		<!-- /END SINGLE SERVICE -->
+		
+	</div>
+	<!-- /END ROW -->
+	
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END FEATURES SECTION -->
+
+
+
+<!-- =========================
+     SCREENSHOTS
+============================== -->
+
+<!--<section class="screenshots grey-bg" id="screenshot-section">-->
+
+<!--<div class="container">-->
+	<!-- -->
+	<!--&lt;!&ndash; SECTION HEADER &ndash;&gt;-->
+	<!--<div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">-->
+		<!-- -->
+		<!--&lt;!&ndash; SECTION TITLE &ndash;&gt;-->
+		<!--<h2 class="dark-text">Screenshots</h2>-->
+		<!-- -->
+		<!--<div class="colored-line">-->
+		<!--</div>-->
+		<!--<div class="section-description">-->
+			<!--List your app features and all the details Lorem ipsum dolor kadr-->
+		<!--</div>-->
+		<!--<div class="colored-line">-->
+		<!--</div>-->
+		<!-- -->
+	<!--</div>-->
+	<!--&lt;!&ndash; /END SECTION HEADER &ndash;&gt;-->
+	<!-- -->
+	<!--<div class="row wow bounceIn animated" data-wow-offset="10" data-wow-duration="1.5s">-->
+		<!-- -->
+		<!--<div id="screenshots" class="owl-carousel owl-theme">-->
+			<!-- -->
+			<!--<div class="shot">-->
+				<!--<a href="images/screenshots/1.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/1.jpg" alt="Screenshot"></a>-->
+			<!--</div>-->
+			<!-- -->
+			<!--<div class="shot">-->
+				<!--<a href="images/screenshots/3.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/3.jpg" alt="Screenshot"></a>-->
+			<!--</div>-->
+			<!-- -->
+			<!--<div class="shot">-->
+				<!--<a href="images/screenshots/2.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/2.jpg" alt="Screenshot"></a>-->
+			<!--</div>-->
+			<!-- -->
+			<!--<div class="shot">-->
+				<!--<a href="images/screenshots/4.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/4.jpg" alt="Screenshot"></a>-->
+			<!--</div>-->
+			<!-- -->
+			<!--<div class="shot">-->
+				<!--<a href="images/screenshots/1.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/1.jpg" alt="Screenshot"></a>-->
+			<!--</div>-->
+			<!-- -->
+			<!--<div class="shot">-->
+				<!--<a href="images/screenshots/3.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/3.jpg" alt="Screenshot"></a>-->
+			<!--</div>-->
+			<!-- -->
+			<!--<div class="shot">-->
+				<!--<a href="images/screenshots/2.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/2.jpg" alt="Screenshot"></a>-->
+			<!--</div>-->
+			<!-- -->
+			<!--<div class="shot">-->
+				<!--<a href="images/screenshots/4.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/4.jpg" alt="Screenshot"></a>-->
+			<!--</div>-->
+			<!-- -->
+		<!--</div>-->
+		<!--&lt;!&ndash; /END SCREENSHOTS &ndash;&gt;-->
+		<!-- -->
+	<!--</div>-->
+	<!--&lt;!&ndash; /END ROW &ndash;&gt;-->
+
+<!--</div>-->
+<!--&lt;!&ndash; /END CONTAINER &ndash;&gt;-->
+
+<!--</section>-->
+<!--&lt;!&ndash; /END SCREENSHOTS SECTION &ndash;&gt;-->
+
+
+
+<!-- =========================
+     DOWNLOAD NOW 
+============================== -->
+<section class="download" id="join-beta">
+
+<div class="color-overlay">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				
+				<!--&lt;!&ndash; DOWNLOAD BUTTONS AREA &ndash;&gt;-->
+				<!--<div class="download-container">-->
+					<!--<h2 class=" wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">Download the app on</h2>-->
+					<!-- -->
+					<!--&lt;!&ndash; BUTTONS &ndash;&gt;-->
+					<!--<div class="buttons wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">-->
+						<!-- -->
+						<!--<a href="" class="btn btn-default btn-lg standard-button"><i class="icon-app-store"></i>App Store</a>-->
+						<!--<a href="" class="btn btn-default btn-lg standard-button"><i class="icon-google-play"></i>Play Store</a>-->
+						<!-- -->
+					<!--</div>-->
+					<!--&lt;!&ndash; /END BUTTONS &ndash;&gt;-->
+					<!-- -->
+				<!--</div>-->
+				<!--&lt;!&ndash; END OF DOWNLOAD BUTTONS AREA &ndash;&gt;-->
+				
+				
+				<!-- SUBSCRIPTION FORM WITH TITLE -->
+				<div class="subscription-form-container">
+					
+					<h2 class="wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">Join our beta Now!</h2>
+					
+					<!-- =====================
+					     MAILCHIMP FORM STARTS 
+					     ===================== -->
+
+					<form class="subscription-form mailchimp form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" role="form">
+
+						<!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
+						<h4 class="subscription-success"></h4>
+						<h4 class="subscription-error"></h4>
+
+						<!-- EMAIL INPUT BOX -->
+						<input type="email" name="email" id="subscriber-email" placeholder="Your Email" class="form-control input-box">
+
+						<!-- SUBSCRIBE BUTTON -->
+						<button type="submit" id="subscribe-button" class="btn btn-default standard-button">Join Beta</button>
+
+					</form>
+					<!-- /END MAILCHIMP FORM STARTS -->
+					
+					<!-- =====================
+					     LOCAL TXT FORM STARTS 
+					     ===================== -->
+					     
+					<!-- THIS FORM IS COMMENTED TO HIDE 
+					
+					<form class="subscription-form form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" id="subscribe" role="form">
+						
+						<h4 class="subscription-success"><i class="icon_check"></i> Thank you! We will notify you soon.</h4>
+						<h4 class="subscription-error">Something Wrong!</h4>
+						
+						<input type="email" name="email" id="subscriber-email" placeholder="Your Email" class="form-control input-box">
+						
+						<button type="submit" id="subscribe-button" class="btn btn-default standard-button">Subscribe</button>
+						
+					</form>
+					
+					-->
+					
+					<!-- / LOCAL TXT SAVING FORM END -->
+
+				</div>
+                <!-- END OF SUBSCRIPTION FORM WITH TITLE -->
+				
+			</div> 
+			<!-- END COLUMN -->
+			
+		</div> 
+		<!-- END ROW -->
+		
+	</div>
+	<!-- /END CONTAINER -->
+</div>
+<!-- /END COLOR OVERLAY -->
+
+</section>
+<!-- /END DOWNLOAD SECTION -->
+
+<!-- =========================
+     FOOTER 
+============================== -->
+<footer>
+
+<div class="container">
+	
+	<div class="contact-box wow rotateIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<!-- CONTACT BUTTON TO EXPAND OR COLLAPSE FORM -->
+		
+		<!--<a class="btn contact-button expand-form expanded"><i class="icon_mail_alt"></i></a>-->
+		
+		<!-- EXPANDED CONTACT FORM -->
+
+		<!-- /END EXPANDED CONTACT FORM -->
+
+	</div>
+	<!-- /END CONTACT BOX -->
+	
+	<!-- LOGO -->
+	<!--<img src="images/logo-black.png" alt="LOGO" class="responsive-img">-->
+  <img src="images/logo-blue.svg" onerror="this.src='images/logo-blue.png'" alt="Swoop Rides" class="responsive-img swoop-logo-blue">
+	
+	<!-- SOCIAL ICONS -->
+	<ul class="social-icons">
+		<li><a href="http://facebook.com/swooprides" target="_blank"><i class="social_facebook_square"></i></a></li>
+		<li><a href="https://twitter.com/swooprides" target="_blank"><i class="social_twitter_square"></i></a></li>
+		<li><a href="http://pinterest.com/swooprides" target="_blank"><i class="social_pinterest_square"></i></a></li>
+		<!--<li><a href="" target="_blank"><i class="social_googleplus_square"></i></a></li>-->
+		<li><a href="http://instagram.com/swooprides" target="_blank"><i class="social_instagram_square"></i></a></li>
+		<!--<li><a href="" target="_blank"><i class="social_dribbble_square"></i></a></li>
+		<li><a href="" target="_blank"><i class="social_flickr_square"></i></a></li>-->
+	</ul>
+	
+	<!-- COPYRIGHT TEXT -->
+	<p class="copyright">
+		©2015 Swoop Rides, All Rights Reserved
+	</p>
+
+</div>
+<!-- /END CONTAINER -->
+ 
+</footer>
+<!-- /END FOOTER -->
+
+<!-- =========================
+     SCRIPTS 
+============================== -->
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.localScroll.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/simple-expand.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/retina.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/matchMedia.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
