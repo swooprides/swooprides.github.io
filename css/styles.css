@@ -824,3 +824,9 @@ footer .copyright {
 .swoop-logo-blue {
   max-width: 172px;
 }
+
+.swoop-chevron-icon-container {
+  font-size: 28px;
+  color: #fff;
+  margin: 20px 0 0;
+}
