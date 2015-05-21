@@ -177,6 +177,11 @@ h5 {
    CUSTOM BUTTON              
 -----------------------------------------*/
 
+a.content-down-arrow {
+  -webkit-transition: all ease 0.25s !important;
+  transition: all ease 0.25s !important;
+}
+
 .standard-button,
 .standard-button2 {
   font-size: 18px;
@@ -844,6 +849,10 @@ footer .copyright {
   font-size: 28px;
   color: #fff;
   margin: 20px 0 0;
+}
+
+.swoop-chevron-icon-container a i {
+  color: #fff;
 }
 
 /*Features*/

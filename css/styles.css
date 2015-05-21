@@ -849,6 +849,15 @@ footer .copyright {
   margin: 20px 0 0;
 }
 
+.swoop-chevron-icon-container a i {
+  color: #fff;
+}
+
+.swoop-chevron-icon-container a {
+  -webkit-transition: all ease 0.25s;
+  transition: all ease 0.25s;
+}
+
 /*Features*/
 .phone-image {
   position: relative;
