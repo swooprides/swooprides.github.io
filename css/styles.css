@@ -830,3 +830,63 @@ footer .copyright {
   color: #fff;
   margin: 20px 0 0;
 }
+
+/*Features*/
+.phone-image {
+  position: relative;
+}
+.phone-image_tpn:before {
+  content: "";
+  display: block;
+  width: 209px;
+  height: 371px;
+  position: absolute;
+  top: 77px;
+  left: 21px;
+  background: url('../images/phone-view-tpn.png') no-repeat;
+  background-size: cover;
+}
+
+.phone-image_itf {
+
+}
+
+.phone-image_sc:before {
+  content: "";
+  display: block;
+  width: 209px;
+  height: 371px;
+  position: absolute;
+  top: 77px;
+  left: 21px;
+  background: url('../images/phone-view-sc.png') no-repeat;
+  background-size: cover;
+}
+
+.phone-image_se {
+
+}
+
+.phone-image_ta:before {
+  content: "";
+  display: block;
+  width: 209px;
+  height: 371px;
+  position: absolute;
+  top: 77px;
+  left: 21px;
+  background: url('../images/phone-view-ta.png') no-repeat;
+  background-size: cover;
+}
+
+.phone-image_rewards:before {
+  content: "";
+  display: block;
+  width: 209px;
+  height: 371px;
+  position: absolute;
+  top: 77px;
+  left: 21px;
+  background: url('../images/phone-view-rewards.png') no-repeat;
+  background-size: cover;
+}
