@@ -269,11 +269,28 @@ horizontalScrolling: false
 ===  Bootstrap Internet Explorer 10 in Windows 8 and Windows Phone 8 FIX
 =================================== */
 if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-  var msViewportStyle = document.createElement('style')
+  var msViewportStyle = document.createElement('style');
   msViewportStyle.appendChild(
     document.createTextNode(
       '@-ms-viewport{width:auto!important}'
     )
-  )
+  );
   document.querySelector('head').appendChild(msViewportStyle)
 }
+
+
+/* =============== Swoop features: toggle phone views on hover ================ */
+var feature;
+
+$('.feature').on({
+    'mouseover': function(event) {
+        var $image = $('.phone-image');
+        feature = $(this).data('feature');
+
+        $image.addClass('phone-image_' + feature);
+    },
+    'mouseleave': function(event) {
+        var $image = $('.phone-image');
+        $image.removeClass('phone-image_' + feature);
+    }
+});
