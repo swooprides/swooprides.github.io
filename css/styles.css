@@ -900,3 +900,29 @@ footer .copyright {
   background: url('../images/phone-view-rewards.png') no-repeat;
   background-size: cover;
 }
+
+/*=========== PRIVACY POLICY PAGE ==========*/
+.privacy-policy {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  background: #ffffff;
+}
+
+.privacy-policy h2 {
+  margin-bottom: 40px;
+}
+
+.privacy-policy h4,
+.privacy-policy p {
+  text-align: left;
+}
+
+.privacy-policy ol {
+  margin: 20px 0 20px 40px;
+  list-style-position: inside;
+}
+
+.privacy-policy ol li {
+  text-align: left;
+  list-style-type: decimal;
+}
