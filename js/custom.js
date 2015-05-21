@@ -37,7 +37,7 @@ $('.mailchimp').ajaxChimp({
 
 function mailchimpCallback(resp) {
     if (resp.result === 'success') {
-        $('.subscription-success').html('<i class="icon_check_alt2"></i><br/>Thank you for your request. You\'re on our list. We\'ll get back be in touch soon as possible.').fadeIn(1000);
+        $('.subscription-success').html('<i class="icon_check_alt2"></i><br/>Thank you for your request. You\'re on our list. We\'ll get back to you soon.').fadeIn(1000);
         $('.subscription-error').fadeOut(500);
 
     } else if(resp.result === 'error') {
