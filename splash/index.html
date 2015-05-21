@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="A ridesharing app that enables larges scale social carpooling">
+<meta name="keywords" content="ridesharing, carpool, social, drive, events">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- SITE TITLE -->
+<title>Swoop Rides</title>
+
+<!-- =========================
+      FAV AND TOUCH ICONS  
+============================== -->
+<link rel="icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+<!-- =========================
+     STYLESHEETS   
+============================== -->
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- FONT ICONS -->
+<!-- http://www.elegantthemes.com/blog/resources/elegant-icon-font -->
+<link rel="stylesheet" href="assets/elegant-icons/style.css">
+<link rel="stylesheet" href="assets/app-icons/styles.css">
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
+
+<!-- WEB FONTS -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
+
+<!-- CAROUSEL AND LIGHTBOX -->
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+
+<!-- ANIMATIONS -->
+<link rel="stylesheet" href="css/animate.min.css">
+
+<!-- CUSTOM STYLESHEETS -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- COLORS -->
+<link rel="stylesheet" href="css/colors/blue.css"> <!-- DEFAULT COLOR/ CURRENTLY USING -->
+<!-- <link rel="stylesheet" href="css/colors/red.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/green.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/purple.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/orange.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/blue-munsell.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/slate.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/yellow.css"> -->
+
+<!-- RESPONSIVE FIXES -->
+<link rel="stylesheet" href="css/responsive.css">
+
+
+<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<!-- JQUERY -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+<!-- =========================
+     PRE LOADER       
+============================== -->
+<!--<div class="preloader">-->
+  <!--<div class="status">&nbsp;</div>-->
+<!--</div>-->
+
+<!-- =========================
+     HEADER   
+============================== -->
+<header class="header" data-stellar-background-ratio="0.5" id="home">
+
+<!-- COLOR OVER IMAGE -->
+<div class="color-overlay"> <!-- To make header full screen. Use .full-screen class with color overlay. Example: <div class="color-overlay full-screen">  -->
+
+	<!-- STICKY NAVIGATION -->
+	<div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation">
+		<div class="container">
+			<div class="navbar-header">
+				
+				<!-- LOGO ON STICKY NAV BAR -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#kane-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+
+				<!--<a class="navbar-brand" href="#"><img src="images/logo-black.png" alt=""></a>-->
+        <a class="navbar-brand" href="#"><img src="images/logo-blue.svg" class="swoop-logo-brand" onerror="this.src='images/logo-blue-header.png'" alt="Swoop Rides"></a>
+				
+			</div>
+			
+			<!-- NAVIGATION LINKS -->
+			<div class="navbar-collapse collapse" id="kane-navigation">
+				<ul class="nav navbar-nav navbar-right main-navigation">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#join-beta">Join Beta</a></li>
+				</ul>
+			</div>
+		</div> <!-- /END CONTAINER -->
+	</div> <!-- /END STICKY NAVIGATION -->
+	
+	
+	<!-- CONTAINER -->
+	<div class="container">
+		
+		<!-- ONLY LOGO ON HEADER -->
+		<div class="only-logo">
+			<div class="navbar">
+				<div class="navbar-header">
+					<!--<img src="images/logo.png" alt="">-->
+          <img src="images/logo.svg" class="header-logo" onerror="this.src='images/logo.png'" alt="Swoop Rides">
+				</div>
+			</div>
+		</div> <!-- /END ONLY LOGO ON HEADER -->
+		
+		<div class="row home-contents">
+			<div class="col-md-6 col-sm-6">
+				
+				<!-- HEADING AND BUTTONS -->
+				<div class="intro-section">
+					
+					<!-- WELCOM MESSAGE -->
+					<h1 class="intro">Social ridesharing enabled.</h1>
+					<h5>Let's take a ride!</h5>
+					
+					<!-- BUTTON -->
+					<div class="buttons" id="download-button">
+						
+						<a href="#download" class="btn btn-default btn-lg standard-button"><i class="icon-app-download"></i>Join Beta</a>
+						
+					</div>
+					<!-- /END BUTTONS -->
+					
+				</div>
+				<!-- /END HEADNING AND BUTTONS -->
+				
+			</div>
+			
+			
+			<div class="col-md-6 col-sm-6 hidden-xs">
+			    
+			    <!-- PHONE IMAGE WILL BE HIDDEN IN TABLET PORTRAIT AND MOBILE-->
+			    <div class="phone-image">
+			    <img src="images/2-iphone-right.png" class="img-responsive" alt="">
+			    </div>
+			    
+			</div>
+			
+		</div>
+		<!-- /END ROW -->
+		
+	</div>
+	<!-- /END CONTAINER -->
+
+	<!-- START CHEVRON ARROW -->
+	<div class="swoop-chevron-icon-container"><i class="glyphicon glyphicon-chevron-down"></i></div>
+	<!-- END CHEVRON ARROW -->
+</div>
+<!-- /END COLOR OVERLAY -->
+</header>
+<!-- /END HEADER -->
+
+<!-- =========================
+     DOWNLOAD NOW 
+============================== -->
+<section class="download" id="join-beta">
+
+<div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				
+				<!-- DOWNLOAD BUTTONS AREA -->
+				<div class="download-container">
+					<h2 class=" wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">Download the app on</h2>
+					
+					<!-- BUTTONS -->
+					<div class="buttons wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+						
+						<a href="" class="btn btn-default btn-lg standard-button"><i class="icon-app-store"></i>App Store</a>
+						<a href="" class="btn btn-default btn-lg standard-button"><i class="icon-google-play"></i>Play Store</a>
+						
+					</div>
+					<!-- /END BUTTONS -->
+					
+				</div>
+				<!-- END OF DOWNLOAD BUTTONS AREA -->
+				
+				
+				<!-- SUBSCRIPTION FORM WITH TITLE -->
+				<div class="subscription-form-container">
+					
+					<h2 class="wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">Join our beta Now!</h2>
+					
+					<!-- =====================
+					     MAILCHIMP FORM STARTS 
+					     ===================== -->
+
+					<form class="subscription-form mailchimp form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" role="form">
+
+						<!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
+						<h4 class="subscription-success"></h4>
+						<h4 class="subscription-error"></h4>
+
+						<!-- EMAIL INPUT BOX -->
+						<input type="email" name="email" id="subscriber-email" placeholder="Your Email" class="form-control input-box">
+
+						<!-- SUBSCRIBE BUTTON -->
+						<button type="submit" id="subscribe-button" class="btn btn-default standard-button">Join Beta</button>
+
+					</form>
+					<!-- /END MAILCHIMP FORM STARTS -->
+					
+					<!-- =====================
+					     LOCAL TXT FORM STARTS 
+					     ===================== -->
+					     
+					<!-- THIS FORM IS COMMENTED TO HIDE 
+					
+					<form class="subscription-form form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" id="subscribe" role="form">
+						
+						<h4 class="subscription-success"><i class="icon_check"></i> Thank you! We will notify you soon.</h4>
+						<h4 class="subscription-error">Something Wrong!</h4>
+						
+						<input type="email" name="email" id="subscriber-email" placeholder="Your Email" class="form-control input-box">
+						
+						<button type="submit" id="subscribe-button" class="btn btn-default standard-button">Subscribe</button>
+						
+					</form>
+					
+					-->
+					
+					<!-- / LOCAL TXT SAVING FORM END -->
+
+				</div>
+                <!-- END OF SUBSCRIPTION FORM WITH TITLE -->
+				
+			</div> 
+			<!-- END COLUMN -->
+			
+		</div> 
+		<!-- END ROW -->
+		
+	</div>
+	<!-- /END CONTAINER -->
+</div>
+<!-- /END COLOR OVERLAY -->
+
+</section>
+<!-- /END DOWNLOAD SECTION -->
+
+<!-- =========================
+     FOOTER 
+============================== -->
+<footer>
+
+<div class="container">
+	
+	<div class="contact-box wow rotateIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<!-- CONTACT BUTTON TO EXPAND OR COLLAPSE FORM -->
+		
+		<!--<a class="btn contact-button expand-form expanded"><i class="icon_mail_alt"></i></a>-->
+		
+		<!-- EXPANDED CONTACT FORM -->
+
+		<!-- /END EXPANDED CONTACT FORM -->
+
+	</div>
+	<!-- /END CONTACT BOX -->
+	
+	<!-- LOGO -->
+	<!--<img src="images/logo-black.png" alt="LOGO" class="responsive-img">-->
+  <img src="images/logo-blue.svg" onerror="this.src='images/logo-blue.png'" alt="Swoop Rides" class="responsive-img swoop-logo-blue">
+	
+	<!-- SOCIAL ICONS -->
+	<ul class="social-icons">
+		<li><a href="http://facebook.com/swooprides" target="_blank"><i class="social_facebook_square"></i></a></li>
+		<li><a href="https://twitter.com/swooprides" target="_blank"><i class="social_twitter_square"></i></a></li>
+		<li><a href="http://pinterest.com/swooprides" target="_blank"><i class="social_pinterest_square"></i></a></li>
+		<!--<li><a href="" target="_blank"><i class="social_googleplus_square"></i></a></li>-->
+		<li><a href="http://instagram.com/swooprides" target="_blank"><i class="social_instagram_square"></i></a></li>
+		<!--<li><a href="" target="_blank"><i class="social_dribbble_square"></i></a></li>
+		<li><a href="" target="_blank"><i class="social_flickr_square"></i></a></li>-->
+	</ul>
+	
+	<!-- COPYRIGHT TEXT -->
+	<p class="copyright">
+		©2015 Swoop Rides, All Rights Reserved
+	</p>
+
+</div>
+<!-- /END CONTAINER -->
+ 
+</footer>
+<!-- /END FOOTER -->
+
+<!-- =========================
+     SCRIPTS 
+============================== -->
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.localScroll.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/simple-expand.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/retina.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/matchMedia.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
