@@ -619,6 +619,11 @@ object {
   margin-top: 20px;
 }
 
+
+.services .single-service p {
+  text-align: justify;
+}
+
 /*---------------------------------------
    SECTION:  SCREENSHOTS 
 -----------------------------------------*/
