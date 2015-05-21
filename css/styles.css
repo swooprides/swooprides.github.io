@@ -815,3 +815,12 @@ footer .copyright {
   padding-top: 10px;
   margin-bottom: 50px;
 }
+
+/* ===== Changes ===== */
+.swoop-logo-brand {
+  width: 97px;
+}
+
+.swoop-logo-blue {
+  max-width: 172px;
+}
