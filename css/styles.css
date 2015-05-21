@@ -177,6 +177,11 @@ h5 {
    CUSTOM BUTTON              
 -----------------------------------------*/
 
+a.content-down-arrow {
+  -webkit-transition: all ease 0.25s !important;
+  transition: all ease 0.25s !important;
+}
+
 .standard-button,
 .standard-button2 {
   font-size: 18px;
@@ -283,14 +288,6 @@ header {
   -webkit-background-size: cover;
   background-size: cover;
   background-position: 50% 0 !important;
-}
-
-header .privacy-policy {
-  /* background: url(../images/bg-1.jpg) no-repeat center top fixed; */
-  /*background: url(../images/background_city_image_original_750.jpg) no-repeat center top fixed;*/
-  /*-webkit-background-size: cover;*/
-  /*background-size: cover;*/
-  /*background-position: 50% 0 !important;*/
 }
 
 header .color-overlay {
@@ -708,10 +705,12 @@ object {
 -----------------------------------------*/
 
 .download {
-  background: url('../images/bg-3.jpg') no-repeat center fixed;
-  -webkit-background-size: cover;
-  background-size: cover;
-  color: #ffffff;
+  background: #fff;
+}
+
+.download > div {
+  padding-top: 110px;
+  padding-bottom: 70px;
 }
 
 .download .color-overlay {
@@ -734,7 +733,7 @@ object {
   -webkit-box-shadow: none;
   box-shadow: none;
   background: #FFF;
-  border: 2px solid #FFF;
+  border: 2px solid #bbb;
 }
 
 .download .subscription-form .input-box:focus,
@@ -756,6 +755,9 @@ object {
    SECTION:  FOOTER                
 -----------------------------------------*/
 
+footer {
+  margin-bottom: 800px;
+}
 footer .contact-box {
   margin-bottom: 78px;
 }
@@ -853,16 +855,10 @@ footer .copyright {
   color: #fff;
 }
 
-.swoop-chevron-icon-container a {
-  -webkit-transition: all ease 0.25s;
-  transition: all ease 0.25s;
-}
-
 /*Features*/
 .phone-image {
   position: relative;
 }
-
 .phone-image_tpn:before {
   content: "";
   display: block;
@@ -875,6 +871,10 @@ footer .copyright {
   background-size: cover;
 }
 
+.phone-image_itf {
+
+}
+
 .phone-image_sc:before {
   content: "";
   display: block;
@@ -885,6 +885,10 @@ footer .copyright {
   left: 21px;
   background: url('../images/phone-view-sc.png') no-repeat;
   background-size: cover;
+}
+
+.phone-image_se {
+
 }
 
 .phone-image_ta:before {
@@ -911,22 +915,9 @@ footer .copyright {
   background-size: cover;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .phone-image_tpn:before,
-  .phone-image_sc:before,
-  .phone-image_ta:before,
-  .phone-image_rewards:before {
-    width: 184px;
-    height: 326px;
-    position: absolute;
-    top: 68px;
-    left: 19px;
-  }
-}
-
 /*=========== PRIVACY POLICY PAGE ==========*/
 .privacy-policy {
-  /*padding-top: 80px;*/
+  padding-top: 80px;
   padding-bottom: 30px;
   background: #ffffff;
 }
