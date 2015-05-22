@@ -472,6 +472,7 @@ header .intro-section .buttons {
   margin-bottom: 20px;
 }
 
+
 .app-brief .phone-image-2 {
   max-width: 350px;
   margin: auto;
@@ -484,12 +485,17 @@ header .intro-section .buttons {
 
 .app-brief .left-align {
   text-align: left;
-  margin-bottom: 50px;
+  margin-bottom: 10px !important;
 }
+
 
 .app-brief .left-align p {
   display: block;
   float: none;
+  margin-top: 30px;
+}
+
+.app-brief .left-align p.first {
   margin-top: 50px;
 }
 
