@@ -46,7 +46,8 @@ DEEP COLOR CODE: #005885
 	color: #FFFFFF;
 }
 
-.features .feature:hover .icon-container .icon {
+.features .feature:hover .icon-container .icon,
+.features .feature.current .icon-container .icon{
     background: #008ed6;
     color: #ffffff;
     border: 2px solid #ffffff;
