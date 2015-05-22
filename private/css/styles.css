@@ -368,13 +368,13 @@ header .intro-section .standard-button {
   margin: 0;
 }
 
-header .phone-image {
+header .phone-image-1 {
   max-width: 350px;
   margin: auto;
   margin-bottom: 50px;
 }
 
-header .phone-image img {
+header .phone-image-1 img {
   width: 100%;
 }
 
@@ -472,13 +472,13 @@ header .intro-section .buttons {
   margin-bottom: 20px;
 }
 
-.app-brief .phone-image {
+.app-brief .phone-image-2 {
   max-width: 350px;
   margin: auto;
   margin-bottom: 50px;
 }
 
-.app-brief .phone-image img {
+.app-brief .phone-image-2 img {
   width: 100%;
 }
 
