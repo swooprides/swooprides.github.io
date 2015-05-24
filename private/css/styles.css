@@ -517,6 +517,7 @@ header .intro-section .buttons {
   margin-left: 16px;
   margin-bottom: 14px;
   font-size: 15px;
+  list-style: circle;
 }
 
 /* VIDEO */
@@ -637,6 +638,15 @@ object {
 
 .services .single-service p {
   text-align: justify;
+}
+
+.services .single-service ul {
+  text-align: left;
+  list-style-type: circle;
+}
+
+.services .single-service ul li {
+  list-style-type: circle;
 }
 
 /*---------------------------------------
