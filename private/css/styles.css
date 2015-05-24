@@ -650,6 +650,7 @@ object {
 .services .single-service ul li {
   list-style-type: circle;
   text-align: justify;
+  margin-right: 18px;
 }
 
 /*---------------------------------------
