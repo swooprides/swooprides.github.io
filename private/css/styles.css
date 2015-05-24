@@ -494,6 +494,7 @@ header .intro-section .buttons {
   display: block;
   float: none;
   margin-top: 30px;
+  text-align: justify;
 }
 
 .app-brief .left-align p.first {
@@ -506,6 +507,7 @@ header .intro-section .buttons {
 
 .app-brief .left-align .feature-list li {
   margin-bottom: 26px;
+  text-align: justify;
 }
 
 .app-brief .left-align .feature-list li i {
@@ -647,6 +649,7 @@ object {
 
 .services .single-service ul li {
   list-style-type: circle;
+  text-align: justify;
 }
 
 /*---------------------------------------
