@@ -101,10 +101,10 @@ if (matchMedia('(min-width: 768px) and (max-width: 991px)').matches) {
 ===  DOWNLOAD BUTTON CLICK SCROLL ==
 =================================== */
 jQuery(function( $ ){
-			$('#download-button').localScroll({
-				duration:1000
-			});
-		});
+    $('#download-button, #scroll-button').localScroll({
+        duration: 1000
+    });
+});
 
 
 /* =================================
@@ -290,17 +290,31 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 
 
 /* =============== Swoop features: toggle phone views on hover ================ */
-var feature;
+$(document).ready(function() {
+    var swoop = swoop || {};
 
-$('.feature').on({
-    'mouseover': function(event) {
-        var $image = $('.phone-image');
-        feature = $(this).data('feature');
+    swoop.$f =  $('.feature');
+    swoop.$image = $('.phone-image');
 
-        $image.addClass('phone-image_' + feature);
-    },
-    'mouseleave': function(event) {
-        var $image = $('.phone-image');
-        $image.removeClass('phone-image_' + feature);
-    }
+    swoop.$currentFeature = swoop.$f.eq(0).data('feature');
+    swoop.$f.eq(0).addClass('current');
+    swoop.$image.addClass('phone-image_' + swoop.$currentFeature);
+
+    swoop.cookie = 'state';
+    swoop.cookieOptions = {expires: 7, path: '/'};
+
+    swoop.$f.on({
+        'mouseover': function(event) {
+            swoop.$f.removeClass('current');
+            $(this).addClass('current');
+
+            swoop.$image.removeClass('phone-image_' + $.cookie(swoop.cookie));
+
+            swoop.feature = $(this).data('feature');
+            swoop.$image.addClass('phone-image_' + swoop.feature);
+        },
+        'mouseleave': function(event) {
+            $.cookie(swoop.cookie, $(this).data('feature'), swoop.cookieOptions);
+        }
+    });
 });

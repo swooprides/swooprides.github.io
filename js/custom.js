@@ -101,10 +101,10 @@ if (matchMedia('(min-width: 768px) and (max-width: 991px)').matches) {
 ===  DOWNLOAD BUTTON CLICK SCROLL ==
 =================================== */
 jQuery(function( $ ){
-			$('#download-button').localScroll({
-				duration:1000
-			});
-		});
+    $('#download-button, #scroll-button').localScroll({
+        duration: 1000
+    });
+});
 
 
 /* =================================
@@ -290,17 +290,18 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 
 
 /* =============== Swoop features: toggle phone views on hover ================ */
-var feature;
+var swoop = swoop || {};
+
 
 $('.feature').on({
     'mouseover': function(event) {
-        var $image = $('.phone-image');
-        feature = $(this).data('feature');
+        swoop.$image = $('.phone-image');
+        swoop.feature = $(this).data('feature');
 
-        $image.addClass('phone-image_' + feature);
+        swoop.$image.addClass('phone-image_' + swoop.feature);
     },
     'mouseleave': function(event) {
-        var $image = $('.phone-image');
-        $image.removeClass('phone-image_' + feature);
+        swoop.$image = $('.phone-image');
+        swoop.$image.removeClass('phone-image_' + swoop.feature);
     }
 });
